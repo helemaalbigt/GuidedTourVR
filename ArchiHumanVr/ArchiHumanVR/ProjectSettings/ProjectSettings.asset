@@ -10,12 +10,12 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: Jams.Center & Thomas Van Bouwel
-  productName: ArchiHuman VR
+  companyName: Jams.Center_TVB
+  productName: GuidedTourVR
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenStyle: 0
-  m_ShowUnitySplashScreen: 1
+  m_ShowUnitySplashScreen: 0
   m_VirtualRealitySplashScreen: {fileID: 0}
   defaultScreenWidth: 1024
   defaultScreenHeight: 768
@@ -30,7 +30,7 @@ PlayerSettings:
   iosShowActivityIndicatorOnLoading: -1
   androidShowActivityIndicatorOnLoading: -1
   iosAppInBackgroundBehavior: 0
-  displayResolutionDialog: 1
+  displayResolutionDialog: 2
   iosAllowHTTPDownload: 1
   allowedAutorotateToPortrait: 1
   allowedAutorotateToPortraitUpsideDown: 1
@@ -39,7 +39,7 @@ PlayerSettings:
   useOSAutorotation: 1
   use32BitDisplayBuffer: 1
   disableDepthAndStencilBuffers: 0
-  defaultIsFullScreen: 1
+  defaultIsFullScreen: 0
   defaultIsNativeResolution: 1
   runInBackground: 1
   captureSingleScreen: 0
@@ -49,9 +49,9 @@ PlayerSettings:
   usePlayerLog: 1
   bakeCollisionMeshes: 0
   forceSingleInstance: 0
-  resizableWindow: 0
+  resizableWindow: 1
   useMacAppStoreValidation: 0
-  gpuSkinning: 0
+  gpuSkinning: 1
   graphicsJobs: 0
   xboxPIXTextureCapture: 0
   xboxEnableAvatar: 0
@@ -94,7 +94,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleIdentifier: com.Company.ProductName
+  bundleIdentifier: com.Jams.Center_TVB.GuidedTourVR
   bundleVersion: 1.0
   preloadedAssets: []
   metroEnableIndependentInputSource: 0
@@ -123,6 +123,7 @@ PlayerSettings:
   iPhoneTargetOSVersion: 24
   tvOSSdkVersion: 0
   tvOSTargetOSVersion: 900
+  tvOSRequireExtendedGameController: 0
   uIPrerenderedIcon: 0
   uIRequiresPersistentWiFi: 0
   uIRequiresFullScreen: 1
@@ -162,6 +163,7 @@ PlayerSettings:
   iOSLaunchScreeniPadCustomXibPath: 
   iOSDeviceRequirements: []
   iOSURLSchemes: []
+  appleDeveloperTeamID: 
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
@@ -203,12 +205,15 @@ PlayerSettings:
   wiiUSystemHeapSize: 128
   wiiUTVStartupScreen: {fileID: 0}
   wiiUGamePadStartupScreen: {fileID: 0}
+  wiiUDrcBufferDisabled: 0
   wiiUProfilerLibPath: 
   actionOnDotNetUnhandledException: 1
   enableInternalProfiler: 0
   logObjCUncaughtExceptions: 1
   enableCrashReportAPI: 0
+  cameraUsageDescription: 
   locationUsageDescription: 
+  microphoneUsageDescription: 
   XboxTitleId: 
   XboxImageXexPath: 
   XboxSpaPath: 
@@ -248,7 +253,8 @@ PlayerSettings:
   ps4AppType: 0
   ps4ParamSfxPath: 
   ps4VideoOutPixelFormat: 0
-  ps4VideoOutResolution: 4
+  ps4VideoOutInitialWidth: 1920
+  ps4VideoOutReprojectionRate: 120
   ps4PronunciationXMLPath: 
   ps4PronunciationSIGPath: 
   ps4BackgroundImagePath: 
@@ -277,9 +283,12 @@ PlayerSettings:
   ps4pnFriends: 1
   ps4pnGameCustomData: 1
   playerPrefsSupport: 0
+  ps4UseResolutionFallback: 0
+  restrictedAudioUsageRights: 0
   ps4ReprojectionSupport: 0
   ps4UseAudio3dBackend: 0
   ps4SocialScreenEnabled: 0
+  ps4ScriptOptimizationLevel: 3
   ps4Audio3dVirtualSpeakerCount: 14
   ps4attribCpuUsage: 0
   ps4PatchPkgPath: 
@@ -452,7 +461,7 @@ PlayerSettings:
   - XboxOne::enus
   - iOS::VR::enable
   - tvOS::VR::enable
-  Android::VR::enable: 0
+  Android::VR::enable: 1
   Metro::VR::enable: 0
   N3DS::VR::enable: 0
   PS3::VR::enable: 0
@@ -460,7 +469,7 @@ PlayerSettings:
   PSM::VR::enable: 0
   PSP2::VR::enable: 0
   SamsungTV::VR::enable: 0
-  Standalone::VR::enable: 0
+  Standalone::VR::enable: 1
   Tizen::VR::enable: 0
   WebGL::VR::enable: 0
   WebGL::analyzeBuildSize: 0
@@ -528,6 +537,7 @@ PlayerSettings:
   SamsungTV::VR::enabledDevices: []
   Standalone::VR::enabledDevices:
   - Oculus
+  - OpenVR
   Tizen::VR::enabledDevices: []
   WebGL::VR::enabledDevices: []
   WebPlayer::VR::enabledDevices: []
